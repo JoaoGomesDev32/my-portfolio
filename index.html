@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#about">Sobre Mim</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact" id="contactBtn">Contato</a>
+    </nav>
+</header>
+
+<!-- Seção Principal -->
+<section id="home">
+    <h1>Olá, Eu sou [Seu Nome]</h1>
+    <p>Desenvolvedor Junior</p>
+</section>
+
+<!-- Sobre Mim -->
+<section id="about">
+    <h2>Sobre Mim</h2>
+    <p>Sou um programador júnior com interesse em desenvolvimento web...</p>
+</section>
+
+<!-- Projetos -->
+<section id="projects">
+    <h2>Meus Projetos</h2>
+    <div class="project">
+    <h3>Projeto 1</h3>
+    <p>Descrição do projeto 1...</p>
+    </div>
+    <div class="project">
+    <h3>Projeto 2</h3>
+    <p>Descrição do projeto 2...</p>
+    </div>
+</section>
+
+<!-- Modal de Contato -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Contato</h2>
+        <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> 
