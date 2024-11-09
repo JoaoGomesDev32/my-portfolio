@@ -1,118 +1,89 @@
-/* Reset Básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body e Fontes */
-  body {
+body {
     font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: #333;
   }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background-color: #333;
-    position: fixed;
-    width: 100%;
-    top: 0;
-  }
-  
-  .logo {
-    color: #ff4500;
-    font-size: 1.5em;
-  }
-  
-  .nav-links {
-    list-style: none;
-  }
-  
-  .nav-links li {
-    display: inline;
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .nav-links a:hover {
-    color: #ff4500;
-  }
-  
-  /* Hero Section */
-  .hero {
+
+  .hero-section {
     height: 100vh;
+    background: url('img/hero-bg.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('path/to/background-image.jpg'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: center;
+    flex-direction: column;
+    color: white;
     text-align: center;
-    position: relative;
   }
   
-  .hero-content {
-    z-index: 1;
+  .about-section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
   }
   
-  .hero h2 {
-    font-size: 3em;
+  .skills-section .progress {
+    height: 20px;
+    margin-bottom: 15px;
+    color: #159e5c;
+  }
+
+  .progress-bar {
+    background-color: #159e5c;
+  }
+  
+  
+  .card {
     margin-bottom: 20px;
-    color: #fff;
+  }
+
+  /* Adiciona o esquema de cores no seu CSS */
+body {
+    background-color: #1c1e21;
+    color: #ffffff;
   }
   
-  .hero-buttons .btn {
-    padding: 10px 20px;
-    margin: 10px;
+  .navbar, .footer {
+    background-color: #222529;
+  }
+
+  .navbar .nav-link:hover {
+    border-bottom: 4px solid #18d26e;
+}
+  
+  .btn-primary {
+    background-color: #18d26e;
+    border-color: #18d26e;
+  }
+  
+  .btn-primary:hover {
+    background-color: #159e5c;
+    border-color: #159e5c;
+  }
+  
+  /* Cores para títulos */
+  h1, h2, h3, h4, h5 {
+    color: #18d26e;
+  }
+
+  /* Estilo para o botão de voltar ao topo */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #18d26e; /* Cor de fundo do botão */
+    color: #ffffff;
     border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
     cursor: pointer;
-    font-size: 1em;
-    border-radius: 5px;
+    display: none; /* Oculto por padrão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 50px;
   }
   
-  .primary-btn {
-    background-color: #ff4500;
-    color: #fff;
+  #scrollTopBtn:hover {
+    background-color: #159e5c; /* Cor de fundo ao passar o mouse */
   }
   
-  .secondary-btn {
-    background-color: transparent;
-    color: #ff4500;
-    border: 2px solid #ff4500;
-  }
-  
-  .hero-buttons .btn:hover {
-    opacity: 0.8;
-  }
-  
-  /* Sobre Mim */
-  .about-section {
-    background-color: #444;
-    padding: 60px 10%;
-    text-align: center;
-  }
-  
-  .about-section h2 {
-    font-size: 2.5em;
-    color: #fff;
-  }
-  
-  .about-section h2 span {
-    color: #ff4500;
-  }
-  
-  .about-section p {
-    font-size: 1.2em;
-    color: #ccc;
-    margin-top: 20px;
-  }
   
